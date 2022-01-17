@@ -44,12 +44,12 @@ btn[9].onclick = () => {
 btn[12].onclick = () => {
     if(!view[0].innerText == "" && !view[1].innerText == "" && !view[2].innerText == "")
     {
-        switch(view[1].innerText)
+        switch(view[1].innerHTML)
         {
-            case "/": view[3].innerText = "= " + (parseInt(view[0].innerHTML)/parseInt(view[2].innerHTML)); indexView = 0; break;
-            case "*": view[3].innerText = "= " + (parseInt(view[0].innerHTML)*parseInt(view[2].innerHTML)); indexView = 0; break;
-            case "-": view[3].innerText = "= " + (parseInt(view[0].innerHTML)-parseInt(view[2].innerHTML)); indexView = 0; break;
-            case "+": view[3].innerText = "= " + (parseInt(view[0].innerHTML)+parseInt(view[2].innerHTML)); indexView = 0; break;
+            case "/": view[3].innerHTML = "= " + (parseInt(view[0].innerHTML)/parseInt(view[2].innerHTML)); indexView = 0; break;
+            case "*": view[3].innerHTML = "= " + (parseInt(view[0].innerHTML)*parseInt(view[2].innerHTML)); indexView = 0; break;
+            case "-": view[3].innerHTML = "= " + (parseInt(view[0].innerHTML)-parseInt(view[2].innerHTML)); indexView = 0; break;
+            case "+": view[3].innerHTML = "= " + (parseInt(view[0].innerHTML)+parseInt(view[2].innerHTML)); indexView = 0; break;
         }
     }
 }
