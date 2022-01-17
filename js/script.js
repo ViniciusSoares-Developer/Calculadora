@@ -9,11 +9,6 @@ for(var index = 0; index<GetNumbers.length; index++)
     numbers[index] = index + 1
 }
 
-var num1 = 0, op = 0, num2 = 0;
-
-var Digit = true;
-
-
 //numeros
 btn[0].onclick = () => {
     view[indexView].innerHTML += "7"
