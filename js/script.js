@@ -40,18 +40,16 @@ btn[8].onclick = () => {
 btn[9].onclick = () => {
     view[indexView].innerHTML += "0"
 }
-console.log(view)
 //Igual
 btn[12].onclick = () => {
     if(!view[0].innerHTML == "" && !view[1].innerHTML == "" && !view[2].innerHTML == "")
     {
-        console.log(indexView)
         switch(view[1].innerHTML)
         {
-            case "/": view[3].innerHTML = "=   " + (parseInt(view[0].innerHTML)/parseInt(view[2].innerHTML)); indexView = 0; break;
-            case "*": view[3].innerHTML = "=   " + (parseInt(view[0].innerHTML)*parseInt(view[2].innerHTML)); indexView = 0; break;
-            case "-": view[3].innerHTML = "=   " + (parseInt(view[0].innerHTML)-parseInt(view[2].innerHTML)); indexView = 0; break;
-            case "+": view[3].innerHTML = "=   " + (parseInt(view[0].innerHTML)+parseInt(view[2].innerHTML)); indexView = 0; break;
+            case "/": view[3].innerHTML = "= " + (parseInt(view[0].innerHTML)/parseInt(view[2].innerHTML)); indexView = 0; break;
+            case "*": view[3].innerHTML = "= " + (parseInt(view[0].innerHTML)*parseInt(view[2].innerHTML)); indexView = 0; break;
+            case "-": view[3].innerHTML = "= " + (parseInt(view[0].innerHTML)-parseInt(view[2].innerHTML)); indexView = 0; break;
+            case "+": view[3].innerHTML = "= " + (parseInt(view[0].innerHTML)+parseInt(view[2].innerHTML)); indexView = 0; break;
         }
     }
 }
@@ -93,6 +91,5 @@ btn[14].onclick = () => {
 btn[10].onclick = () =>{
     for(var index = 0; index<view.length; index++){
         view[index].innerHTML = ""
-        console.log(index)
     }
 }
